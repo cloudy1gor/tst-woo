@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="http://localhost:3300">
+	<meta property="og:locale" content="ru_RU">
+	<meta property="og:site_name" content="">
+	<meta property="og:title" content="Home">
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="http://localhost:3300">
+	<meta property="twitter:site" content="">
+	<meta property="twitter:title" content="Home">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-title" content="Home">
+	<meta name="theme-color" content="#ffffff">
+	<meta name="format-detection" content="address=no,date=no,email=no,telephone=no">
+	<title>Home</title>
+	<link rel="icon" href="./assets/images/common/favicons/favicon-16x16.png" sizes="16x16">
+	<link rel="icon" href="./assets/images/common/favicons/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" href="./assets/images/common/favicons/android-chrome-36x36.png" sizes="36x36">
+	<link rel="icon" href="./assets/images/common/favicons/android-chrome-48x48.png" sizes="48x48">
+	<link rel="icon" href="./assets/images/common/favicons/android-chrome-72x72.png" sizes="72x72">
+	<link rel="icon" href="./assets/images/common/favicons/android-chrome-96x96.png" sizes="96x96">
+	<link rel="icon" href="./assets/images/common/favicons/android-chrome-144x144.png" sizes="144x144">
+	<link rel="icon" href="./assets/images/common/favicons/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" href="./assets/images/common/favicons/android-chrome-256x256.png" sizes="256x256">
+	<link rel="icon" href="./assets/images/common/favicons/android-chrome-384x384.png" sizes="384x384">
+	<link rel="icon" href="./assets/images/common/favicons/android-chrome-512x512.png" sizes="512x512">
+	<link rel="icon" href="./assets/images/common/favicons/favicon.ico">
+	<link rel="apple-touch-icon" href="./assets/images/common/favicons/apple-touch-icon-57x57.png" sizes="57x57">
+	<link rel="apple-touch-icon" href="./assets/images/common/favicons/apple-touch-icon-60x60.png" sizes="60x60">
+	<link rel="apple-touch-icon" href="./assets/images/common/favicons/apple-touch-icon-72x72.png" sizes="72x72">
+	<link rel="apple-touch-icon" href="./assets/images/common/favicons/apple-touch-icon-76x76.png" sizes="76x76">
+	<link rel="apple-touch-icon" href="./assets/images/common/favicons/apple-touch-icon-114x114.png" sizes="114x114">
+	<link rel="apple-touch-icon" href="./assets/images/common/favicons/apple-touch-icon-120x120.png" sizes="120x120">
+	<link rel="apple-touch-icon" href="./assets/images/common/favicons/apple-touch-icon-144x144.png" sizes="144x144">
+	<link rel="apple-touch-icon" href="./assets/images/common/favicons/apple-touch-icon-152x152.png" sizes="152x152">
+	<link rel="apple-touch-icon" href="./assets/images/common/favicons/apple-touch-icon-167x167.png" sizes="167x167">
+	<link rel="apple-touch-icon" href="./assets/images/common/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+	<link rel="apple-touch-icon" href="./assets/images/common/favicons/apple-touch-icon-1024x1024.png"
+		sizes="1024x1024">
+	<link rel="manifest" href="./assets/images/common/favicons/manifest.json">
+	<link rel="canonical" href="http://localhost:3300">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="body">
+	<div class="wrapper">
+
+		<!-- Завдання уважно прочитано -->
+
+		<header class="header">
+			<div class="header__container">
+
+				<nav class="header__nav">
+					<ul class="header__menu">
+						<li>
+							<a href="https://t.me/cloudy1gor" target="_blank">Мій Телеграм</a>
+						</li>
+						<li>
+							<a href="https://cloudy1gor.github.io" target="_blank">Моє портфоліо</a>
+						</li>
+					</ul>
+				</nav>
+
+			</div>
+		</header>
+
+		<main class="main">
+			<div class="container">
+
+				<section class="info">
+					<h1 class="info__title">Адаптивна веб-сторінка</h1>
+				</section>
+
+				<section class="products">
+					<h2 class="title">Картки товарів</h2>
+
+					<div class="products__body">
+
+						<article class="products__card highlight">
+							<img src="https://placehold.co/300x200.webp" alt="Товар 1">
+							<h3>Товар 1</h3>
+							<p class="price">₴299</p>
+						</article>
+
+						<article class="products__card">
+							<img src="https://placehold.co/300x200.webp" alt="Товар 2">
+							<h3>Товар 2</h3>
+							<p class="price">₴399</p>
+						</article>
+
+						<article class="products__card">
+							<img src="https://placehold.co/300x200.webp" alt="Товар 3">
+							<h3>Товар 3</h3>
+							<p class="price">₴499</p>
+						</article>
+
+					</div>
+
+				</section>
+
+				<section class="contact-form">
+					<div class="contact-form__container">
+
+						<h2 class="title">Контактна форма</h2>
+
+						<form id="contactForm" action="./send.php" method="POST" validate="false">
+							<label for="name">Ім’я:</label>
+							<span class="contact-form__error error" id="name-error"></span>
+							<input id="name" type="text" name="name" required>
+
+							<label for="email">Email:</label>
+							<span class="contact-form__error error" id="email-error"></span>
+							<input id="email" type="email" name="email" required>
+
+							<label for="message">Повідомлення:</label>
+							<span class="contact-form__error error" id="message-error"></span>
+							<textarea id="message" name="message" maxlength="100" required></textarea>
+							<span class="contact-form__error error" id="status"></span>
+
+							<button type="submit">Надіслати</button>
+							<span class="contact-form__word" id="secret-word"></span>
+						</form>
+
+
+					</div>
+				</section>
+
+			</div>
+		</main>
+
+		<!-- Невидимий елемент -->
+		<div class="hidden" id="gippo" style="display:none;">Гіпопотам</div>
+
+		<footer class="footer" role="contentinfo">
+			<div class="footer__container">
+				<p>&copy; 2025р. Усі права захищені.</p>
+			</div>
+		</footer>
+
+	</div>
+
+	<script src="assets/js/main.js"></script>
+</body>
+
+</html>
