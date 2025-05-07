@@ -15,7 +15,7 @@ window.addEventListener("DOMContentLoaded", () => {
   function onEmailInput() {
     if (!isEmailValid(emailInput.value)) {
       emailInput.style.borderColor = "#BA5B5B";
-      emailStatus.innerText = "Invalid email format";
+      emailStatus.innerText = "Некорекнтно вказаний формат Email";
     } else {
       emailInput.style.borderColor = "#5B6C8C";
       emailStatus.innerText = "";
@@ -40,7 +40,7 @@ window.addEventListener("DOMContentLoaded", () => {
     const value = nameInput.value;
     if (!isNameValid(value)) {
       nameInput.style.borderColor = "#BA5B5B";
-      nameStatus.innerText = "Invalid name format";
+      nameStatus.innerText = "Некорекнтно вказаний формат імені";
     } else {
       nameInput.style.borderColor = "#5B6C8C";
       nameStatus.innerText = "";
@@ -65,7 +65,7 @@ window.addEventListener("DOMContentLoaded", () => {
     const value = messageInput.value;
     if (!isMessageValid(value)) {
       messageInput.style.borderColor = "#BA5B5B";
-      messageStatus.innerText = `Message must be between 1 and ${MAX_LENGTH} characters`;
+      messageStatus.innerText = `Повинно містити від 1 до ${MAX_LENGTH} символів`;
     } else {
       messageInput.style.borderColor = "#5B6C8C";
       messageStatus.innerText = "";
