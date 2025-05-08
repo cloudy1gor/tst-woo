@@ -1,7 +1,9 @@
 ## Структура
 ```
 /landing - файли з версткою і js/php частиною тз
-/woo - тека з темою Wordpress
+/woo - тека з файлами для роботи з темою Wordpress
+/woo/src/themes/storefront/inc/storefront-woocommerce-customizations.php - файл з кодом для ТЗ
+/woo/dump - імпорт бази данних
 ```
 
 ### У теці /landing просто потрібно відкрити index.html
@@ -14,7 +16,15 @@ docker-compose build --no-cache
 docker-compose up -d
 ```
 
-Тепер проект доступний за адресою: `http://localhost:8001`.
+### Тепер потрібно зробити імпорт данних до БД:
 
-* `woo/src` – тека з темою Wordpress
-* `woo/dump` – тека з database dumps
+```
+bash export.sh
+```
+
+Тепер проект доступний за адресою: `http://localhost:8001`.
+Логін та пароль `admin` для входу в wp-admin
+
+![](/screen.jpg)
+![](/screen2.jpg)
+![](/screen3.jpg)
